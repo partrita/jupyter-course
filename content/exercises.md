@@ -1,23 +1,23 @@
-# List of exercises
+# 연습 문제 목록
 
-## Summary
+## 요약
 
-JupyterLab and notebook interface:
+JupyterLab 및 노트북 인터페이스:
 - {ref}`integrated-development-environments`
 
-A first computational notebook:
+첫 번째 계산 노트북:
 - {ref}`first-notebook`
 - {ref}`other-kernels`
 
-Notebooks and version control:
+노트북 및 버전 관리:
 - {ref}`plain-git-diff`
 
-Sharing notebooks:
+노트북 공유:
 - {ref}`reproducible-via-binder`
 - {ref}`without-requirements`
 - {ref}`share-widget`
 
-Examples of Jupyter features:
+Jupyter 기능 예제:
 - {ref}`interactive-data-fitting`
 - {ref}`cell-profiling`
 - {ref}`installing-magic-command`
@@ -28,13 +28,9 @@ Examples of Jupyter features:
 - {ref}`word-count-widgets`
 
 
-## Full list
+## 전체 목록
 
-This is a list of all exercises and solutions in this lesson, mainly
-as a reference for helpers and instructors.  This list is
-automatically generated from all of the other pages in the lesson.
-Any single teaching event will probably cover only a subset of these,
-depending on their interests.
+이것은 이 강의의 모든 연습 문제와 해결책 목록이며, 주로 도우미와 강사를 위한 참고 자료입니다. 이 목록은 강의의 다른 모든 페이지에서 자동으로 생성됩니다. 단일 교육 이벤트는 관심사에 따라 이들의 하위 집합만 다룰 수 있습니다.
 
 ```{exerciselist}
 ```

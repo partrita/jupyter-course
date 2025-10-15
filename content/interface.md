@@ -1,26 +1,25 @@
-# JupyterLab and notebook interface
+# JupyterLab 및 노트북 인터페이스
 
 ```{objectives}
-- Learn to navigate JupyterLab user interface.
-- Discuss integrated development environments.
-- Get an overview of useful keyboard shortcuts.
-- Learn about command/edit modes and markdown/code cells.
+- JupyterLab 사용자 인터페이스 탐색 배우기.
+- 통합 개발 환경에 대해 토론하기.
+- 유용한 키보드 단축키 개요 얻기.
+- 명령/편집 모드 및 마크다운/코드 셀에 대해 배우기.
 ```
 
 ```{instructor-note}
-- 15 min teaching
-- 0 min exercises
+- 15분 강의
+- 0분 연습
 ```
 
-JupyterLab is the next-generation user interface for Jupyter Notebooks
-and is intended to replace the conventional interface.
-It is a highly modular and customizable interface.
+JupyterLab은 Jupyter 노트북의 차세대 사용자 인터페이스이며 기존 인터페이스를 대체하기 위한 것입니다.
+이것은 매우 모듈화되고 사용자 정의가 가능한 인터페이스입니다.
 
 ---
 
-## How to start JupyterLab
+## JupyterLab 시작 방법
 
-Let's have a look at how it works. We go to terminal, and type:
+어떻게 작동하는지 살펴보겠습니다. 터미널로 이동하여 다음을 입력합니다:
 ```console
 $ mkdir jupyterlab-demo
 $ cd jupyterlab-demo
@@ -29,162 +28,159 @@ $ jupyter-lab
 
 ---
 
-## Components: the big picture
+## 구성 요소: 큰 그림
 
 ```{figure} img/notebook_components.png
-:alt: Components of a Jupyter notebook
+:alt: Jupyter 노트북의 구성 요소
 
-Components of a Jupyter notebook.
+Jupyter 노트북의 구성 요소.
 ```
 
 ---
 
-## Navigation
+## 탐색
 
 ```{figure} img/JupyterInterface.png
-:alt: Jupyter used interface has a file browser and a notebook view
+:alt: Jupyter 사용 인터페이스에는 파일 브라우저와 노트북 보기가 있습니다.
 :width: 100%
 
-Jupyter Lab user interface has a left side toolbar – that has a file browser and a git tab. The file browser shows the file that Jupyter Lab was opened in. The right side shows the files that are open. You can have split view by dragging from the top tab view. (CC-BY)
+Jupyter Lab 사용자 인터페이스에는 왼쪽 사이드 툴바가 있습니다. 여기에는 파일 브라우저와 git 탭이 있습니다. 파일 브라우저는 Jupyter Lab이 열린 파일을 보여줍니다. 오른쪽에는 열려 있는 파일이 표시됩니다. 상단 탭 보기에서 드래그하여 분할 보기를 가질 수 있습니다. (CC-BY)
 ```
 
-- Left-hand menu (toggle it with `Ctrl(⌘)-b`):
-     - File browser
-         - New launcher
-         - New folder
-         - Upload files
-     - Running terminals and kernels
-     - Command palette
-     - Cell inspector
-     - Open tabs
-     - Git integration (if `jupyterlab-git` extension installed)
-     - GitHub browser (if `jupyterlab-github` extension installed)
-- Fully-fledged terminal
-- Text editor for source code in different languages
-- Code console to run code interactively in a kernel with rich output and linear order
-- Modular interface
-     - Notebooks, terminals, consoles, data files etc can be moved around
-- Classical notebook style is available under the Help menu
+- 왼쪽 메뉴 (`Ctrl(⌘)-b`로 토글):
+     - 파일 브라우저
+         - 새 런처
+         - 새 폴더
+         - 파일 업로드
+     - 실행 중인 터미널 및 커널
+     - 명령 팔레트
+     - 셀 검사기
+     - 열린 탭
+     - Git 통합 (`jupyterlab-git` 확장이 설치된 경우)
+     - GitHub 브라우저 (`jupyterlab-github` 확장이 설치된 경우)
+- 완전한 기능을 갖춘 터미널
+- 다른 언어의 소스 코드를 위한 텍스트 편집기
+- 풍부한 출력과 선형 순서로 코드를 대화식으로 실행하기 위한 코드 콘솔
+- 모듈식 인터페이스
+     - 노트북, 터미널, 콘솔, 데이터 파일 등을 이동할 수 있습니다.
+- 클래식 노트북 스타일은 도움말 메뉴에서 사용할 수 있습니다.
 
 ---
 
-## Cells
+## 셀
 
-- **Markdown cells** contain formatted text written in Markdown
-- **Code cells** contain code to be interpreted by the *kernel* (Python, R, Julia, Octave/Matlab...)
+- **마크다운 셀**에는 마크다운으로 작성된 서식 있는 텍스트가 포함됩니다.
+- **코드 셀**에는 *커널*(Python, R, Julia, Octave/Matlab...)에 의해 해석될 코드가 포함됩니다.
 
 
-### Markdown cells
+### 마크다운 셀
 
 ```markdown
-## Second level heading
+## 두 번째 수준 제목
 
-This cell contains simple
-[markdown](https://daringfireball.net/projects/markdown/syntax), a simple language for writing text that can be automatically converted to other formats, e.g. HTML, LaTeX or any of a number of others.
+이 셀에는 간단한
+[마크다운](https://daringfireball.net/projects/markdown/syntax)이 포함되어 있으며, 이는 HTML, LaTeX 또는 다른 여러 형식으로 자동 변환될 수 있는 텍스트를 작성하기 위한 간단한 언어입니다.
 
-**Bold**, *italics*, **_combined_**, ~~strikethrough~~, `inline code`.
+**굵게**, *기울임꼴*, **_조합_**, ~~취소선~~, `인라인 코드`.
 
-* bullet points
+* 글머리 기호
 
-or
+또는
 
-1. numbered
-3. lists
+1. 번호 매기기
+3. 목록
 
-**Equations:**
-inline $e^{i\pi} + 1 = 0$
-or on new line
+**방정식:**
+인라인 $e^{i\pi} + 1 = 0$
+또는 새 줄에
 $$e^{i\pi} + 1 = 0$$
 
-Images:
+이미지:
 
-![Jupyter logo](https://jupyter.org/assets/homepage/main-logo.svg)
+![Jupyter 로고](https://jupyter.org/assets/homepage/main-logo.svg)
 
-Links:
-[One of many markdown cheat-sheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#emphasis)
+링크:
+[많은 마크다운 치트 시트 중 하나](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#emphasis)
 ```
 
 
-### Code cells
+### 코드 셀
 
 ```python
-# a code cell can run statements of code.
-# when you run this cell, the output is sent
-# from the web page to a back-end process, run
-# and the results are displayed to you
+# 코드 셀은 코드 문을 실행할 수 있습니다.
+# 이 셀을 실행하면 출력이
+# 웹 페이지에서 백엔드 프로세스로 전송되고, 실행됩니다.
+# 그리고 결과가 사용자에게 표시됩니다.
 print("hello world")
 ```
 
 
-### Command and edit modes
+### 명령 및 편집 모드
 
-- To add contents to a cell, you need to enter *edit mode* by pressing `Enter` or
-  double-clicking on a cell
-- To navigate between cells, create new cells, etc., you need to enter *command* mode by
-  pressing `Escape` key or executing the current cell.
+- 셀에 내용을 추가하려면 `Enter`를 누르거나 셀을 더블 클릭하여 *편집 모드*로 들어가야 합니다.
+- 셀 사이를 탐색하거나 새 셀을 만드는 등의 작업을 하려면 `Escape` 키를 누르거나 현재 셀을 실행하여 *명령 모드*로 들어가야 합니다.
 
 ---
 
-## Keyboard shortcuts
+## 키보드 단축키
 
-Some shortcuts only work in Command or Edit mode.
-It can also happen that these shortcuts interfere with browser shortcuts.
+일부 단축키는 명령 또는 편집 모드에서만 작동합니다.
+이러한 단축키가 브라우저 단축키와 충돌하는 경우도 발생할 수 있습니다.
 
 
-### Cell shortcuts
+### 셀 단축키
 
-| Shortcut | Effect |
+| 단축키 | 효과 |
 | -------- | ------ |
-| `Enter` | Enter Edit mode |
-|`Escape` or `Ctrl`-`m` | Enter Command mode |
-| `Ctrl`-`Enter` | Run the cell |
-| `Shift`-`Enter`| Run the cell and select the cell below |
-| `Alt`-`Enter`| Run the cell and insert a new cell below |
-| `m` and `y` | Toggle between Markdown and Code cells |
-| `d-d` | Delete a cell |
-| `z` | Undo deleting  |
-| `a/b` | Insert cells above/below current cell |
-| `x/c/v` | Cut/copy/paste cells |
-| `Up/Down` or `k/j` | Select previous/next cells |
+| `Enter` | 편집 모드로 들어가기 |
+|`Escape` 또는 `Ctrl`-`m` | 명령 모드로 들어가기 |
+| `Ctrl`-`Enter` | 셀 실행 |
+| `Shift`-`Enter`| 셀을 실행하고 아래 셀 선택 |
+| `Alt`-`Enter`| 셀을 실행하고 아래에 새 셀 삽입 |
+| `m` 및 `y` | 마크다운과 코드 셀 간 전환 |
+| `d-d` | 셀 삭제 |
+| `z` | 삭제 취소 |
+| `a/b` | 현재 셀 위/아래에 셀 삽입 |
+| `x/c/v` | 셀 잘라내기/복사/붙여넣기 |
+| `위/아래` 또는 `k/j` | 이전/다음 셀 선택 |
 
 
-### Notebook shortcuts
+### 노트북 단축키
 
-| Shortcut | Effect |
+| 단축키 | 효과 |
 | -------- | ------ |
-| `Ctrl(⌘)`-`s` | Save notebook |
-| `Shift`-`Ctrl(⌘)`-`s` | Save notebook as |
-| `Ctrl`-q | Close notebook |
-| `Ctrl(⌘)`-`b` | Toggle left-hand menu |
-| `Shift`-`Ctrl(⌘)`-`c` | Open command palette |
-| `Shift`-`Ctrl(⌘)`-d | Toggle single-document mode |
+| `Ctrl(⌘)`-`s` | 노트북 저장 |
+| `Shift`-`Ctrl(⌘)`-`s` | 노트북 다른 이름으로 저장 |
+| `Ctrl`-q | 노트북 닫기 |
+| `Ctrl(⌘)`-`b` | 왼쪽 메뉴 토글 |
+| `Shift`-`Ctrl(⌘)`-`c` | 명령 팔레트 열기 |
+| `Shift`-`Ctrl(⌘)`-d | 단일 문서 모드 토글 |
 
 ---
 
 (integrated-development-environments)=
 
-### Tools for writing, testing and debugging code
+### 코드 작성, 테스트 및 디버깅을 위한 도구
 
-```{admonition} What tools do you use for writing, testing, and debugging code?
-Some people prefer **terminal-based text editors** for writing code (e.g. Vi/Vim, Nano, Emacs, etc.).
+```{admonition} 코드 작성, 테스트 및 디버깅에 어떤 도구를 사용하십니까?
+어떤 사람들은 코드 작성을 위해 **터미널 기반 텍스트 편집기**(예: Vi/Vim, Nano, Emacs 등)를 선호합니다.
 
-Others prefer **integrated development environments (IDEs)**,
-which can bring "everything" one needs for productive programming to one's fingertips.a
+다른 사람들은 생산적인 프로그래밍에 필요한 "모든 것"을 손쉽게 제공할 수 있는 **통합 개발 환경(IDE)**을 선호합니다.
 
-Yet others prefer **code editors**, which are light-weight IDEs.
+또 다른 사람들은 경량 IDE인 **코드 편집기**를 선호합니다.
 
-**Terminal editor**
-- Good command line skills are needed for effectively using terminal editors
-- Continue using Emacs and Vim, if you are already proficient
-- Supports multiple programming languages
+**터미널 편집기**
+- 터미널 편집기를 효과적으로 사용하려면 좋은 명령줄 기술이 필요합니다.
+- 이미 능숙하다면 Emacs와 Vim을 계속 사용하십시오.
+- 여러 프로그래밍 언어를 지원합니다.
 
 **IDE**
-- If you are working with large code bases, then you should definitely checkout the IDE suitable for your programming language
-- IDEs offer rich support for Debugging and Code refactoring
-- Focused on a single language
+- 대규모 코드 베이스로 작업하는 경우 프로그래밍 언어에 적합한 IDE를 반드시 확인해야 합니다.
+- IDE는 디버깅 및 코드 리팩토링에 대한 풍부한 지원을 제공합니다.
+- 단일 언어에 중점을 둡니다.
 
-**Code editor**
-- If you use multiple programming languages then code editors offer good support
-- Both IDE and code editors share common features such as code completion, hints, highlighting sections of code
-- Supports multiple programming languages
+**코드 편집기**
+- 여러 프로그래밍 언어를 사용하는 경우 코드 편집기는 좋은 지원을 제공합니다.
+- IDE와 코드 편집기 모두 코드 완성, 힌트, 코드 섹션 강조 표시와 같은 공통 기능을 공유합니다.
+- 여러 프로그래밍 언어를 지원합니다.
 ```

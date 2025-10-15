@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this lesson material, please cite it using these metadata."
+message: "이 강의 자료를 사용하는 경우, 이 메타데이터를 사용하여 인용하십시오."
 authors:
 - name: "CodeRefinery"
 - family-names: "Bast"
@@ -16,9 +16,9 @@ authors:
   given-names: "Teemu"
 - family-names: "Eckardt"
   given-names: "Max Roald"
-title: "Jupyter Notebooks"
+title: "Jupyter 노트북"
 type: "data"
-abstract: "A tool to write and share executable notebooks and data visualization. This lesson gives an overview of what Jupyter notebooks are, when they can be particularly useful, and shows best practices for reusable and reproducible notebooks."
+abstract: "실행 가능한 노트북과 데이터 시각화를 작성하고 공유하는 도구입니다. 이 강의는 Jupyter 노트북이 무엇인지, 특히 유용할 수 있는 경우, 재사용 및 재현 가능한 노트북을 위한 모범 사례를 개괄적으로 설명합니다."
 version: 2025-03-19
 date-released: 2025-03-19
 url: "https://coderefinery.github.io/jupyter/"

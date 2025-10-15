@@ -1,45 +1,28 @@
-# Credit and license
+# 크레딧 및 라이선스
 
-This material is provided by CodeRefinery under the licenses stated below.
-
-
-## Website template
-
-The website template is maintained by [CodeRefinery](https://coderefinery.org/)
-and rendered with [sphinx-lesson: structured lessons with Sphinx](https://coderefinery.github.io/sphinx-lesson/).
+이 자료는 아래 명시된 라이선스에 따라 CodeRefinery에서 제공합니다.
 
 
-## Instructional material
+## 웹사이트 템플릿
 
-All CodeRefinery instructional material is made available under the
-[Creative Commons Attribution license (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
-The following is a human-readable summary of (and not a substitute for)
-the [full legal text of the CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode).
+웹사이트 템플릿은 [CodeRefinery](https://coderefinery.org/)에서 유지 관리하며 [sphinx-lesson: Sphinx를 사용한 구조화된 강의](https://coderefinery.github.io/sphinx-lesson/)로 렌더링됩니다.
 
-You are free:
 
-- to **Share** - copy and redistribute the material in any medium or format
-- to **Adapt** - remix, transform, and build upon the material
+## 교육 자료
 
-for any purpose, even commercially. The licensor cannot revoke these freedoms as long as you follow these license terms:
+모든 CodeRefinery 교육 자료는 [Creative Commons Attribution 라이선스(CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/)에 따라 제공됩니다. 다음은 [CC-BY-4.0 라이선스의 전체 법률 텍스트](https://creativecommons.org/licenses/by/4.0/legalcode)에 대한 사람이 읽을 수 있는 요약이며 대체물이 아닙니다.
 
-- **Attribution** - You must give appropriate credit
-  (mentioning that your work is derived from work that is Copyright
-  (c) CodeRefinery and, where practical, linking to
-  <https://coderefinery.org>, provide
-  a [link to the license](https://creativecommons.org/licenses/by/4.0/),
-  and indicate if changes were made. You may do so in any
-  reasonable manner, but not in any way that suggests the licensor
-  endorses you or your use.
+당신은 자유롭게:
 
-**No additional restrictions** - You may not apply legal terms or technological
-measures that legally restrict others from doing anything the license permits.
-With the understanding that:
+- **공유** - 모든 매체 또는 형식으로 자료를 복사하고 재배포할 수 있습니다.
+- **적응** - 리믹스, 변형 및 자료를 기반으로 구축할 수 있습니다.
 
-- You do not have to comply with the license for elements of the material in
-  the public domain or where your use is permitted by an applicable exception
-  or limitation.
-- No warranties are given. The license may not give you all of the
-  permissions necessary for your intended use. For example, other
-  rights such as publicity, privacy, or moral rights may limit how
-  you use the material.
+상업적인 목적을 포함하여 모든 목적을 위해. 라이선스 제공자는 귀하가 이러한 라이선스 조건을 따르는 한 이러한 자유를 철회할 수 없습니다.
+
+- **저작자 표시** - 적절한 크레딧을 제공해야 합니다.
+  (귀하의 저작물이 저작권 (c) CodeRefinery의 저작물에서 파생되었음을 언급하고, 가능한 경우 <https://coderefinery.org>에 링크하고, [라이선스 링크](https://creativecommons.org/licenses/by/4.0/)를 제공하고, 변경 사항이 있는지 표시하십시오. 합리적인 방식으로 그렇게 할 수 있지만, 라이선스 제공자가 귀하 또는 귀하의 사용을 보증한다고 제안하는 방식으로는 안 됩니다.
+
+**추가 제한 없음** - 라이선스가 허용하는 모든 것을 다른 사람이 수행하는 것을 법적으로 제한하는 법적 조건이나 기술적 조치를 적용할 수 없습니다. 다음을 이해하는 조건으로:
+
+- 공개 도메인에 있는 자료의 요소에 대해 또는 해당 예외 또는 제한에 의해 사용이 허용되는 경우 라이선스를 준수할 필요가 없습니다.
+- 보증이 제공되지 않습니다. 라이선스는 의도된 사용에 필요한 모든 권한을 부여하지 않을 수 있습니다. 예를 들어, 퍼블리시티, 개인 정보 보호 또는 저작인격권과 같은 다른 권리는 자료 사용 방법을 제한할 수 있습니다.

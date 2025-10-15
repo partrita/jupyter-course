@@ -1,29 +1,23 @@
-Jupyter notebooks - A tool to write and share executable notebooks and data visualization
+Jupyter 노트북 - 실행 가능한 노트북과 데이터 시각화를 작성하고 공유하는 도구
 =========================================================================================
 
-The goal of this lesson is to teach learners the user interface of JupyterLab,
-how Jupyter notebooks work, and what some common and powerful use cases are.
+이 강의의 목표는 학습자에게 JupyterLab의 사용자 인터페이스, Jupyter 노트북의 작동 방식, 그리고 몇 가지 일반적이고 강력한 사용 사례를 가르치는 것입니다.
 
-For many learners, notebooks are not a new concept,
-and our goal will be to demonstrate and discuss and guide towards good practices
-for **reproducibility, collaboration, and reusability**.
+많은 학습자에게 노트북은 새로운 개념이 아니며, 우리의 목표는 **재현성, 협업 및 재사용성**을 위한 좋은 관행을 시연하고 논의하며 안내하는 것입니다.
 
 
 .. prereq::
 
-  - A reasonably recent version of Jupyter and JupyterLab, which is installed
-    as part of the
-    `Conda environment for CodeRefinery workshops <https://coderefinery.github.io/installation/conda-environment/>`__.
-  - Optional (we only demonstrate this):
-    A reasonably recent version of Git to be able to work with the JupyterLab Git integration.
-  - If you wish to follow in the terminal and are new to the command line, we
-    recorded a `short shell crash course <https://youtu.be/xbTTDLA3txI>`__.
+  - `CodeRefinery 워크샵을 위한 Conda 환경 <https://coderefinery.github.io/installation/conda-environment/>`__의 일부로 설치되는 비교적 최신 버전의 Jupyter 및 JupyterLab.
+  - 선택 사항(이것만 시연합니다):
+    JupyterLab Git 통합을 사용하려면 비교적 최신 버전의 Git.
+  - 터미널에서 따라가고 싶고 명령줄이 처음인 경우, `짧은 셸 속성 과정 <https://youtu.be/xbTTDLA3txI>`__을 녹화했습니다.
 
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: Core episodes
+   :caption: 핵심 에피소드
 
    motivation
    interface
@@ -34,16 +28,16 @@ for **reproducibility, collaboration, and reusability**.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Optional episodes
+   :caption: 선택적 에피소드
 
    extra-features
    examples
 
 .. toctree::
    :maxdepth: 1
-   :caption: Reference
+   :caption: 참조
 
-   Shell crash course <https://youtu.be/xbTTDLA3txI>
+   셸 속성 과정 <https://youtu.be/xbTTDLA3txI>
    exercises
    guide
    license
@@ -51,8 +45,8 @@ for **reproducibility, collaboration, and reusability**.
 
 .. toctree::
    :maxdepth: 1
-   :caption: About
+   :caption: 정보
 
-   All lessons <https://coderefinery.org/lessons/core/>
+   모든 강의 <https://coderefinery.org/lessons/core/>
    CodeRefinery <https://coderefinery.org/>
-   Reusing <https://coderefinery.org/lessons/reusing/>
+   재사용 <https://coderefinery.org/lessons/reusing/>

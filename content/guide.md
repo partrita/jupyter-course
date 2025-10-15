@@ -1,163 +1,107 @@
-# Instructor guide
+# 강사 가이드
 
-## Why we teach this lesson
+## 이 강의를 가르치는 이유
 
-When CodeRefinery started teaching this lesson it was meant to introduce participants
-to a cool new tool around which there was a lot of buzz (particularly in data science),
-and which could be useful to researchers to quickly prototype code and analyze data in an interactive way.
-Since then, more and more participants are already using Jupyter for various purposes
-when they come to a workshop.
+CodeRefinery가 이 강의를 가르치기 시작했을 때, 참가자들에게 많은 화제가 되었던 멋진 새 도구(특히 데이터 과학 분야에서)를 소개하고, 연구원들이 코드를 신속하게 프로토타이핑하고 대화형으로 데이터를 분석하는 데 유용할 수 있도록 하는 것이 목적이었습니다. 그 이후로 점점 더 많은 참가자들이 워크숍에 올 때 이미 다양한 목적으로 Jupyter를 사용하고 있습니다.
 
-One purpose of teaching this lesson is still to introduce Jupyter to participants who haven't
-used it before. The episodes "Motivation", "The JupyterLab and notebook interface" and
-"A first computational notebook" are meant to inspire participants to use notebooks for
-certain appropriate tasks, highlighting in particular the "computational narrative" aspect
-which is brilliantly enabled by notebooks.
+이 강의를 가르치는 목적 중 하나는 이전에 사용해 본 적이 없는 참가자들에게 Jupyter를 소개하는 것입니다. "동기 부여", "JupyterLab 및 노트북 인터페이스", "첫 번째 계산 노트북" 에피소드는 참가자들이 특정 적절한 작업에 노트북을 사용하도록 영감을 주기 위한 것이며, 특히 노트북이 훌륭하게 지원하는 "계산적 서사" 측면을 강조합니다.
 
-After the first three episodes the focus shifts to topics related to version control ("Notebooks and version control"), open science and reproducibility ("Sharing notebooks") which connects to topics covered in other CodeRefinery lessons.
+처음 세 에피소드 이후에는 버전 관리("노트북 및 버전 관리"), 공개 과학 및 재현성("노트북 공유")과 관련된 주제로 초점이 이동하며, 이는 다른 CodeRefinery 강의에서 다루는 주제와 연결됩니다.
 
-There are also two optional episodes, "Shell commands, magics and widgets" and "Additional exercises"
-which go through various features and use-cases of Jupyter.
+또한 "셸 명령어, 매직 및 위젯"과 "추가 연습"이라는 두 가지 선택적 에피소드가 있으며, 이는 Jupyter의 다양한 기능과 사용 사례를 다룹니다.
 
-A key take-home message from this lesson should be that Jupyter notebooks
-can be a very useful tool for reproducible research, if used wisely.
+이 강의의 핵심 메시지는 Jupyter 노트북이 현명하게 사용된다면 재현 가능한 연구에 매우 유용한 도구가 될 수 있다는 것입니다.
 
 
-## Intended learning outcomes
+## 의도된 학습 결과
 
-By the end of this lesson, learners should:
-- be able to explain what a computational narrative is
-- be able to identify areas of their own work where Jupyter notebooks could be an appropriate tool
-- be able to use the JupyterLab interface efficiently
-- understand that version control is equally important for notebooks as for other code
-- know how to version control notebooks efficiently using JupyterLab plugins
-- know that notebooks can be used to document scientific analysis, and published
-  e.g. as supplementary information with journal articles to aid reproducibility
-- know how to share notebooks via Binder
-- understand possible pitfalls of using notebooks
-
-
-## Timing and lesson placement
-
-### Detailed schedule
-
-- 12:00 - 12:05 [Jupyter notebooks](https://coderefinery.github.io/jupyter/motivation/)
-- 12:05 - 12:15 [JupyterLab and notebook interface](https://coderefinery.github.io/jupyter/interface/)
-- 12:15 - 12:40 [A first computational notebook](https://coderefinery.github.io/jupyter/first-notebook/)
-  - [Exercise (20 min)](https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook)
-- 12:40 - 12:50 [Notebooks and version control demo](https://coderefinery.github.io/jupyter/version-control/)
-- 12:50 - 12:55 [Sharing notebooks](https://coderefinery.github.io/jupyter/sharing/)
-- 12:55 - 13:05 Break
-- 13:05 - 13:25 [Binder exercise (20 min)](https://coderefinery.github.io/jupyter/sharing/#sharing-dynamic-notebooks-on-binder)
-- 13:25 - 13:30 [Summary](https://coderefinery.github.io/jupyter/summary/)
-
-## Exercises
-
-- "A first computational notebook" can be done either as a 20 minute exercise
-  or as a type-along demo.
-- "Instructor demonstrates a plain git diff" should be done as demonstration.
-- "Making your notebooks reproducible by anyone via Binder" should be done as a
-  20 minute exercise but can also be done as a demo.
-- There are three optional exercises in "Sharing notebooks", one on trying to reproduce
-  results from a published notebook, another on sharing an interactive notebook on Binder,
-  and one for R users who can try to deploy R   Studio/ R Markdown to Binder.
-- The "Examples" episode contains many interesting examples which can be used
-  for demonstration or as exercises. The dependencies for ipywidget examples are
-  typically tricky to install/enable in a group exercise. Instead they can be
-  demonstrated on Binder (there is an optional exercise for this).
+이 강의가 끝나면 학습자는 다음을 수행할 수 있어야 합니다.
+- 계산적 서사가 무엇인지 설명할 수 있습니다.
+- 자신의 작업 영역에서 Jupyter 노트북이 적절한 도구가 될 수 있는 영역을 식별할 수 있습니다.
+- JupyterLab 인터페이스를 효율적으로 사용할 수 있습니다.
+- 노트북의 버전 관리가 다른 코드와 마찬가지로 중요하다는 것을 이해합니다.
+- JupyterLab 플러그인을 사용하여 노트북을 효율적으로 버전 관리하는 방법을 알고 있습니다.
+- 노트북을 사용하여 과학적 분석을 문서화하고, 재현성을 돕기 위해 저널 기사와 함께 보충 정보로 게시할 수 있다는 것을 알고 있습니다.
+- Binder를 통해 노트북을 공유하는 방법을 알고 있습니다.
+- 노트북 사용의 잠재적인 함정을 이해합니다.
 
 
-## How to teach this lesson
+## 시간 및 강의 배치
 
-### Motivation
+### 상세 일정
 
-How the instructor introduces and motivates Jupyter notebooks is flexible and
-can depend on the instructor's background. The first episode emphasizes the
-"computational narrative" aspect of notebooks, and highlights a few
-common use cases. The gravitational-wave discovery is used as a motivational
-example, and it's helpful if the instructor clicks the Binder link to see how
-the notebooks become available for interactive exploration in the cloud.
-The instructor should also open the link "Gallery of interesting Jupyter notebooks"
-to show the wide variety of notebooks that people have shared online.
+- 12:00 - 12:05 [Jupyter 노트북](https://coderefinery.github.io/jupyter/motivation/)
+- 12:05 - 12:15 [JupyterLab 및 노트북 인터페이스](https://coderefinery.github.io/jupyter/interface/)
+- 12:15 - 12:40 [첫 번째 계산 노트북](https://coderefinery.github.io/jupyter/first-notebook/)
+  - [연습 (20분)](https://coderefinery.github.io/jupyter/first-notebook/#an-example-computational-notebook)
+- 12:40 - 12:50 [노트북 및 버전 관리 데모](https://coderefinery.github.io/jupyter/version-control/)
+- 12:50 - 12:55 [노트북 공유](https://coderefinery.github.io/jupyter/sharing/)
+- 12:55 - 13:05 휴식
+- 13:05 - 13:25 [Binder 연습 (20분)](https://coderefinery.github.io/jupyter/sharing/#sharing-dynamic-notebooks-on-binder)
+- 13:25 - 13:30 [요약](https://coderefinery.github.io/jupyter/summary/)
+
+## 연습
+
+- "첫 번째 계산 노트북"은 20분짜리 연습으로 하거나 따라하기 시연으로 할 수 있습니다.
+- "강사가 일반 git diff를 시연합니다"는 시연으로 수행해야 합니다.
+- "Binder를 통해 누구나 노트북을 재현할 수 있도록 만들기"는 20분짜리 연습으로 수행해야 하지만 데모로도 수행할 수 있습니다.
+- "노트북 공유"에는 세 가지 선택적 연습이 있습니다. 하나는 게시된 노트북의 결과를 재현해 보는 것이고, 다른 하나는 Binder에서 대화형 노트북을 공유하는 것이며, R 사용자를 위한 것으로 R Studio/R Markdown을 Binder에 배포해 보는 것입니다.
+- "예제" 에피소드에는 시연이나 연습으로 사용할 수 있는 흥미로운 예제가 많이 포함되어 있습니다. ipywidget 예제의 종속성은 그룹 연습에서 설치/활성화하기가 까다로운 경우가 많습니다. 대신 Binder에서 시연할 수 있습니다(이를 위한 선택적 연습이 있습니다).
 
 
-### The JupyterLab interface
+## 이 강의를 가르치는 방법
 
-The second episode deals with the JupyterLab interface and how notebooks work. At
-this stage the instructor should open Jupyter-Lab, demonstrate the
-interface by clicking around and then launch a new notebook. Inside this notebook
-the instructor can add headings and text and a simple code cell to illustrate
-how cells work (copy-pasting from the lesson works well). A few important keyboard
-shortcuts can be demonstrated.
+### 동기 부여
 
-There is a discussion point on integrated development environments. This can
-be used as a discussion exercise, where participants are invited to talk about
-their prefered way to write code. The instructur can mention that JupyterLab is
-sort of like an IDE for notebooks.
+강사가 Jupyter 노트북을 소개하고 동기를 부여하는 방법은 유연하며 강사의 배경에 따라 달라질 수 있습니다. 첫 번째 에피소드는 노트북의 "계산적 서사" 측면을 강조하고 몇 가지 일반적인 사용 사례를 강조합니다. 중력파 발견은 동기 부여 예제로 사용되며, 강사가 Binder 링크를 클릭하여 클라우드에서 대화형 탐색을 위해 노트북을 사용할 수 있게 되는 방법을 확인하는 것이 도움이 됩니다. 강사는 또한 "흥미로운 Jupyter 노트북 갤러리" 링크를 열어 사람들이 온라인에서 공유한 다양한 노트북을 보여주어야 합니다.
 
-Take-home messages:
-- The JupyterLab interface is flexible and one can customize the workspace by dragging
-  notebooks, terminals and text editors around.
-- There are code cells and markdown cells that work differently, and there are
-  command and edit modes. It's easy to switch between these.
+
+### JupyterLab 인터페이스
+
+두 번째 에피소드는 JupyterLab 인터페이스와 노트북이 작동하는 방식을 다룹니다. 이 단계에서 강사는 Jupyter-Lab을 열고 인터페이스를 클릭하여 시연한 다음 새 노트북을 실행해야 합니다. 이 노트북 내에서 강사는 제목과 텍스트 및 간단한 코드 셀을 추가하여 셀이 작동하는 방식을 설명할 수 있습니다(강의에서 복사하여 붙여넣는 것이 잘 작동합니다). 몇 가지 중요한 키보드 단축키를 시연할 수 있습니다.
+
+통합 개발 환경에 대한 토론 지점이 있습니다. 이것은 참가자들이 선호하는 코드 작성 방식에 대해 이야기하도록 초대하는 토론 연습으로 사용할 수 있습니다. 강사는 JupyterLab이 노트북을 위한 IDE와 같다고 언급할 수 있습니다.
+
+핵심 메시지:
+- JupyterLab 인터페이스는 유연하며 노트북, 터미널 및 텍스트 편집기를 드래그하여 작업 공간을 사용자 지정할 수 있습니다.
+- 다르게 작동하는 코드 셀과 마크다운 셀이 있으며 명령 및 편집 모드가 있습니다. 이들 사이를 쉽게 전환할 수 있습니다.
 
 
 
-### A first computational notebook
+### 첫 번째 계산 노트북
 
-To show that Jupyter Notebooks are rather simple and intuitive, the third episode
-demonstrates the building up of a computational narrative
-to compute pi and adding comments, equations and figures.
-The instructor should create a new notebook, name it and then type out or copy-paste from the lesson
-into notebook cells. Learners should be given time to follow along interactively.
+Jupyter 노트북이 매우 간단하고 직관적이라는 것을 보여주기 위해 세 번째 에피소드는 파이를 계산하고 주석, 방정식 및 그림을 추가하는 계산적 서사를 구축하는 것을 시연합니다. 강사는 새 노트북을 만들고 이름을 지정한 다음 강의에서 노트북 셀로 입력하거나 복사하여 붙여넣어야 합니다. 학습자는 대화형으로 따라갈 시간을 주어야 합니다.
 
-After the notebook is completed, participants and instructor should commit it to the
-repository.
+노트북이 완료되면 참가자와 강사는 리포지토리에 커밋해야 합니다.
 
-Take-home messages:
-- Notebooks provide a simple and interactive tool for various kinds of analysis.
-- Keyboard shortcuts enable efficient usage. The instructor should clearly
-  explain the most common ones for executing cells, creating new cells, changing
-  between markdown and code cells, etc.
-- The execution order of cells matters, the instructor can demonstrate this by
-  going up and down in the notebook.
+핵심 메시지:
+- 노트북은 다양한 종류의 분석을 위한 간단하고 대화형 도구를 제공합니다.
+- 키보드 단축키를 사용하면 효율적으로 사용할 수 있습니다. 강사는 셀 실행, 새 셀 만들기, 마크다운과 코드 셀 간 전환 등 가장 일반적인 것을 명확하게 설명해야 합니다.
+- 셀의 실행 순서가 중요하며, 강사는 노트북을 위아래로 이동하여 이를 시연할 수 있습니다.
 
 
-### Notebooks and version control
+### 노트북 및 버전 관리
 
-After discussing the Git integrations, the instructor should encourage participants to
-initialize a Git repo in their notebook directory, and commit the first "testing" notebook.
-They can do this via the JupyterLab interface if they have the plugins installed, or via
-terminal inside JupyterLab, or via regular terminal.
+Git 통합에 대해 논의한 후 강사는 참가자들이 노트북 디렉토리에서 Git 리포지토리를 초기화하고 첫 번째 "테스트" 노트북을 커밋하도록 권장해야 합니다. 플러그인이 설치되어 있는 경우 JupyterLab 인터페이스를 통해 이 작업을 수행하거나 JupyterLab 내의 터미널 또는 일반 터미널을 통해 수행할 수 있습니다.
 
-Take home message: The Git integration in JupyterLab is powerful and enables tracking
-notebooks in just the same way as one would with source code files.
+핵심 메시지: JupyterLab의 Git 통합은 강력하며 소스 코드 파일과 동일한 방식으로 노트북을 추적할 수 있습니다.
 
-### Sharing notebooks
+### 노트북 공유
 
-This episode has a list of services and tools to share and collaborate on Jupyter
-notebooks. The instructor doesn't have to go through each item in the list, but
-rather emphasize that many services and tools built around Jupyter exist.
+이 에피소드에는 Jupyter 노트북을 공유하고 공동 작업하기 위한 서비스 및 도구 목록이 있습니다. 강사는 목록의 각 항목을 모두 살펴볼 필요는 없지만 Jupyter를 중심으로 구축된 많은 서비스와 도구가 존재한다는 점을 강조해야 합니다.
 
-The exercise on making notebooks reproducible via Binder is an important one as
-it connects with other lessons and emphasizes the reproducibility benefits of notebooks.
-If time allows, the instructor can let participants set up a remote repository on GitHub
-for their local notebook repos, and push to the remote. After that they can follow the
-exercise steps to obtain a Binder badge to add to their repository README files.
-If time is short, the instructor can instead just demonstrate all steps and encourage
-participants to try it out themselves later.
+Binder를 통해 노트북을 재현 가능하게 만드는 연습은 다른 강의와 연결되고 노트북의 재현성 이점을 강조하므로 중요한 것입니다. 시간이 허락한다면 강사는 참가자들이 로컬 노트북 리포지토리에 대해 GitHub에 원격 리포지토리를 설정하고 원격으로 푸시하도록 할 수 있습니다. 그 후에는 연습 단계를 따라 리포지토리 README 파일에 추가할 Binder 배지를 얻을 수 있습니다. 시간이 부족하면 강사는 대신 모든 단계를 시연하고 참가자들이 나중에 직접 시도해 보도록 권장할 수 있습니다.
 
 
 
-### (Optional) Shell commands, magics and widgets
+### (선택 사항) 셸 명령어, 매직 및 위젯
 
-Take-home messages:
-- There is more to notebooks than just code.
-- Magics and shell commands can be useful for various kinds of workflows, and enable
-  users to stay within the notebook instead of jumping to another terminal.
-- Widgets add even more interactivity to notebooks.
+핵심 메시지:
+- 노트북에는 코드 이상의 것이 있습니다.
+- 매직 및 셸 명령어는 다양한 종류의 워크플로에 유용할 수 있으며 사용자가 다른 터미널로 이동하는 대신 노트북 내에 머물 수 있도록 합니다.
+- 위젯은 노트북에 훨씬 더 많은 상호 작용을 추가합니다.
 
 
-### (Optional) Additional exercises
+### (선택 사항) 추가 연습
 
-Interesting and fun exercises to learn about various Jupyter features and use cases.
+다양한 Jupyter 기능 및 사용 사례에 대해 배울 수 있는 흥미롭고 재미있는 연습입니다.
